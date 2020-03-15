@@ -1,0 +1,28 @@
+#!/bin/bash
+# name: ifEG
+
+# basic if statement: 
+
+# if (input) is greter thn 100
+if [ $1 -gt 100 ]
+then 
+	echo Hey that\'s a large numbo
+	pwd
+fi
+
+date
+
+# nested if statement:
+
+echo nested if EG: 
+
+if [ $1 -gt 100 ]
+then
+        echo Hey that\'s a large numbo
+        # if there is no remainder
+	if (( $1 % 2 == 0 ))
+	then
+		echo And is also an even numbo
+	fi
+fi
+

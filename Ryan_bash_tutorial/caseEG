@@ -1,0 +1,17 @@
+#!/bin/bash
+# name: caseEG
+
+case $1 in 
+	start)
+		echo starting
+		;;
+	stop)
+		echo stopping
+		;;
+	restart)
+		echo restarting
+		;;
+	*)
+		echo dunno
+		;;
+esac

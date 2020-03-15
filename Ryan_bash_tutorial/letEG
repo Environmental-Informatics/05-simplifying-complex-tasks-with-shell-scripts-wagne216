@@ -1,0 +1,36 @@
+#!/bin/bash
+# name: letEG
+# basica math using let and ((
+
+# most basic- no quotes thus no spaces
+let a=5+4
+echo $a # 9
+
+# sameas ln 5
+let "a = 5 + 4"
+echo $a # 9
+
+# plus 1
+let a++
+echo $a # 10
+
+let "a = 4 * 5"
+echo $a # 20
+
+# add var of first cmd
+let "a = $1 + 30"
+echo $a # 30 + first cmd line arg
+
+echo "(( eg:"
+b=$(( 4 + 5 ))
+echo $b #9
+
+b=$((3+5))
+echo $b #8
+# can include var's with or without $ sign
+c=$(( $b + 4 ))
+echo $c #11
+
+(( c++ ))
+echo $c #13
+echo c length: ${#c}

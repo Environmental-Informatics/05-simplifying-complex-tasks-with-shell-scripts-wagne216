@@ -1,0 +1,14 @@
+#!/bin/bash
+# name: whileEG
+
+counter=1
+
+# while counter is less then or equal to 10
+while [ $counter -le 10 ]
+do
+	echo $counter
+# add 1 after each print
+	((counter++))
+done
+
+echo "ALL DONE!I()@I$(@"

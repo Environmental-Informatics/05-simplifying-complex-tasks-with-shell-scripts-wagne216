@@ -1,0 +1,23 @@
+#!/bin/bash
+# name: fxEG
+
+print_something () {
+	echo Yo im a function
+}
+
+print_something
+print_something
+
+print_input () {
+	echo Yo $1
+}
+
+print_input $1 # will print whatever user inputs after "Yo"
+
+print_return () {
+	echo hi $1
+	return $2
+}
+
+print_return $1 $2
+echo $? 

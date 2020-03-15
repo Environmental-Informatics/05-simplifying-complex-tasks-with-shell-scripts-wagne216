@@ -1,0 +1,11 @@
+#!/bin/bash
+# simple EG copy script
+
+# cp {source} {destination}
+cp $1 $2
+# verify copy worked
+
+
+echo Details for $2
+ls -lh $2
+

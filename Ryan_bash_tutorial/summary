@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#basic summary of sales report
+echo Here\'s a summary of the sales data: 
+echo ===================_================
+echo
+
+
+cat /dev/stdin | cut -d' ' -f 2,3 | sort
